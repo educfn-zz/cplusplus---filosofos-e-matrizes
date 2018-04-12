@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1523496692 source:c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\threadsandphilosoferconvertion\main.cpp
+	<iostream>
+	"Account.h"
+
+1523496692 source:c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\threadsandphilosoferconvertion\src\account.cpp
+	"Account.h"
+	<iostream>
+
+1523496692 c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\threadsandphilosoferconvertion\include\account.h
+
