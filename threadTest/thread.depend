@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1523410091 source:c:\users\ceitelabinfo\desktop\thread\main.cpp
+	<iostream>
+	<thread>
+	<mutex>
+
