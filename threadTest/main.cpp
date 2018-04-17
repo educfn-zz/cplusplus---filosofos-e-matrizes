@@ -10,7 +10,8 @@ void foo()
   for(int i=65;i<80;i++)
   {
      std::lock_guard<std::mutex> guard(t_mutex);
-     std::cout << "AAAAA" << std::endl;
+     char c = (char) i;
+     std::cout << c << std::endl;
   }
 }
 
@@ -19,10 +20,13 @@ void bar()
     for(int i=97;i<112;i++)
   {
         std::lock_guard<std::mutex> guard(t_mutex);
-        std::cout << "aa" << std::endl;
+        char c = (char) i;
+        std::cout << c << c <<std::endl;
   }
 
 }
+
+
 
 int main()
 {
