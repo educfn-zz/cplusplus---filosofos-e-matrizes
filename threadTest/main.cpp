@@ -30,15 +30,20 @@ void bar()
 
 int main()
 {
-
-  std::thread first (foo);     // spawn new thread that calls foo()
-  std::thread second (bar);  // spawn new thread that calls bar(0)
+  //std::thread first[5];     // spawn new thread that calls foo()
 
   std::cout << "main, foo and bar now execute concurrently...\n";
 
-  // synchronize threads:
-  first.join();                // pauses until first finishes
-  second.join();               // pauses until second finishes
+    for(int i=0;i<std::thread::hardware_concurrency();i++)
+    {
+        std::thread first[5];
+
+        first[i](foo());
+        first[i].join();                // pauses until first finishes
+        first[i] (bar());
+        first[i].join();
+    }
+                // pauses until second finishes
 
   std::cout << "\nfoo and bar completed.\n";
 
