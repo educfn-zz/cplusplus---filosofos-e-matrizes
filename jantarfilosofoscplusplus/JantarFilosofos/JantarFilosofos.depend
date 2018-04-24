@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1524410284 source:c:\users\eduardo\documents\github\cplusplus---filosofos-e-matrizes\jantarfilosofoscplusplus\jantarfilosofos\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdbool>
+
+1524410284 
+
+1524442149 source:/home/eduardocfn/Área de Trabalho/cplusplus---filosofos-e-matrizes/jantarfilosofoscplusplus/JantarFilosofos/main.cpp
+	<iostream>
+	<cstdio>
+	<cstdbool>
+	<thread>
+	<mutex>
+	<chrono>
+	<string>
+
+1524442186 source:/media/educfn/61D9-17E9/1-faculdade/ubuntucplusplus/cplusplus---filosofos-e-matrizes/jantarfilosofoscplusplus/JantarFilosofos/main.cpp
+	<iostream>
+	<cstdio>
+	<cstdbool>
+	<thread>
+	<mutex>
+	<chrono>
+	<string>
+
+1524608105 source:c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\jantarfilosofoscplusplus\jantarfilosofos\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdbool>
+	<thread>
+	<mutex>
+	<chrono>
+	<string>
+
