@@ -203,11 +203,11 @@ int main(int argc, char *argv[])
         << "" << std::endl;
 
         //iniciando filosofos
-        /*std::thread primeira (&Philosopher::run,philosophers[0]);
-        std::thread  segunda (philosophers[1].run());
-        std::thread  terceira (philosophers[2].run());
-        philosophers[3];
-        philosophers[4];*/
+        std::thread primeira (&Philosopher::run,philosophers[0]);
+        //std::thread  segunda (philosophers[1].run());
+        //std::thread  terceira (philosophers[2].run());
+        //philosophers[3];
+        //philosophers[4];
 
         //aguardando o fim do jantar
         try {

@@ -1,6 +1,16 @@
 #include <iostream>
 #include <cstdlib>
+#include <cstdbool>
 
+typedef struct no_matriz * ptrMatriz;
+
+struct no_matriz
+{
+    ptrMatriz prox;//proximo
+    ptrMatriz ant;//anterior
+    ptrMatriz emb;//embaixo
+    float valor;
+};
 
 class Matriz
 {
@@ -40,8 +50,21 @@ int main()
 {
     Matriz m;
     std::cout << "Hello world!" << std::endl;
-    m = new Matriz::Matriz();
+    //m = new Matriz::Matriz();
     m.criarMatriz(0,0);
     return 0;
 }
+
+void exibirMatriz(ptrMatriz m)
+{
+     ptrMatriz p = m;
+     while(1)
+     {
+
+          std::cout << "\t[" << p
+          << "]";
+     }
+}
+
+
 

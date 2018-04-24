@@ -1,5 +1,10 @@
 # depslib dependency file v1.0
-1524528828 source:c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\multiplicaçãomatriz\main.cpp
+1524611058 source:c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\multiplicaçãomatriz\main.cpp
 	<iostream>
 	<cstdlib>
+	<cstdbool>
+	"matriz.h"
+
+1524611366 c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\multiplicaçãomatriz\matriz.h
+	<stdlib.h>
 
