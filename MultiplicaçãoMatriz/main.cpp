@@ -21,23 +21,32 @@ private:
     ptrMatriz matriz2;
 
 public:
-    Matriz()
+    Matriz()//Construtor da Classe Matriz.
     {
         matriz1=nullptr;
         matriz2=nullptr;
     }
 
-    ptrMatriz getPtrMatriz1()
+    ptrMatriz getPtrMatriz1()//Devolve o ponteiro para a Matriz1.
     {
         return matriz1;
     }
 
-    ptrMatriz getPtrMatriz2()
+    ptrMatriz getPtrMatriz2()//Devolve o ponteiro para a Matriz2.
     {
         return matriz2;
     }
 
     ptrMatriz criarMatriz(int tam_x,int tam_y)
+    //DESCRICAO DA FUNCAO:
+    //Criar uma matriz atraves de alocacao dinamica ao final devolvendo o ponteiro
+    //para o noh [0][0] da matriz.
+    //Toda linha termina com um noh com a variavel ponteiro 'prox' apontando para nullptr.
+    //A linha final eh aquela que a variavel ponteiro 'emb'(embaixo), contiver o valor nullptr.
+    //Eh necessario dois ponteiros para ler esta matriz: um para percorrer todos os noh´s
+    //da linha e outro para apontar para o primeiro noh. Somente com a confirmacao
+    //do valor 'nullptr' nas variaveis ponteiro da struct 'ptrMatriz':
+    //emb(primeiro noh) e prox(ultimo noh da linha) se pode confirmar que se chegou ao fim da matriz.
     {
         srand(time(NULL));//Semente de tempo para ser usada na geracao de valores aleatorios(rand()).
 
@@ -109,6 +118,7 @@ public:
         return p;
     }//Fim da funcao 'criarMatriz()'.
 
+    void exibirMatriz()
 };
 
 int main()
