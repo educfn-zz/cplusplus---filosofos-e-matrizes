@@ -39,11 +39,13 @@ public:
 
     ptrMatriz criarMatriz(int tam_x,int tam_y)
     //DESCRICAO DA FUNCAO:
-    //Criar uma matriz atraves de alocacao dinamica ao final devolvendo o ponteiro
-    //para o noh [0][0] da matriz.
-    //Toda linha termina com um noh com a variavel ponteiro 'prox' apontando para nullptr.
-    //A linha final eh aquela que a variavel ponteiro 'emb'(embaixo), contiver o valor nullptr.
-    //Eh necessario dois ponteiros para ler esta matriz: um para percorrer todos os noh´s
+    //-Criar uma matriz atraves de alocacao dinamica ao final devolvendo o ponteiro
+    //para o noh [0][0] da matriz.(Caso a funcao retorne 'nullptr',ocorreu um erro
+    //durante a criacao da matriz).
+    //-Toda linha termina com um noh com a variavel ponteiro 'prox' apontando para nullptr.
+    //-A linha final eh aquela que a variavel ponteiro 'emb'(primeiro noh da linha),
+    //contiver o valor nullptr.
+    //-Eh necessario dois ponteiros para ler esta matriz: um para percorrer todos os noh´s
     //da linha e outro para apontar para o primeiro noh. Somente com a confirmacao
     //do valor 'nullptr' nas variaveis ponteiro da struct 'ptrMatriz':
     //emb(primeiro noh) e prox(ultimo noh da linha) se pode confirmar que se chegou ao fim da matriz.
@@ -118,7 +120,10 @@ public:
         return p;
     }//Fim da funcao 'criarMatriz()'.
 
-    void exibirMatriz()
+    void exibirMatriz(ptrMatriz m)
+    {
+
+    }
 };
 
 int main()
