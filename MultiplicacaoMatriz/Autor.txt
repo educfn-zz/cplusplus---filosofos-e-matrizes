@@ -1,0 +1,4 @@
+Aluno:Eduardo Cardoso Fernandes Neto - 5ºSemestre - nº de chamada:9197350.
+Este programa foi desenvolvido na IDE Codeblocks 17.12, 
+eh aconselhado reproduzir no mesmo ambiente para evitar problemas de compatibilidade.
+O compilador usado eh:GCC compiler.

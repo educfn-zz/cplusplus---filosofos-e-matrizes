@@ -138,9 +138,18 @@ public:
            std::cout << "* Filósofo " << iId << " diz: Acabou o rango e eu nem comi!" << std::endl;
     }
 
-    void request_run(Philosopher philosopher)
+    void request_run()
     {
-        philosopher.run();
+        std::thread t(&Philosopher::run,this);
+        try
+        {
+        t.join();
+        }
+        catch (int err)
+        {
+            std::cout << err << ":Erro na Main() durante o .join() de alguma thread" << std::endl;
+        }
+
     }
 
     int getAmount(){
@@ -168,8 +177,8 @@ int main(int argc, char *argv[])
         <<("* PONDO A MESA E RECEBENDO OS CONVIDADOS *")<<std::endl
         <<("******************************************")<<std::endl;
 
-        /*if(argc > 1)
-            iAmount =  std::stoi(argv[1],nullptr,0);*/ //somente para compilador GCC atualizado.
+        if(argc > 1)
+            iAmount =  std::stoi(argv[1],nullptr,0);
 
         //criando bandeja
         Tray tray(1, iAmount);
@@ -203,31 +212,18 @@ int main(int argc, char *argv[])
         << "" << std::endl;
 
         //iniciando filosofos
-        std::thread primeira (&Philosopher::run,philosophers[0]);
-        //std::thread  segunda (philosophers[1].run());
-        //std::thread  terceira (philosophers[2].run());
-        //philosophers[3];
-        //philosophers[4];
+        philosophers[0].request_run();
+        philosophers[1].request_run();
+        philosophers[2].request_run();
+        philosophers[3].request_run();
+        philosophers[4].request_run();
 
-        //aguardando o fim do jantar
-        try {
-            /*primeira.join();
-            segunda.join();
-            terceira.join();
-            quarta.join();
-            quinta.join();*/
-
+            //aguardando o fim do jantar
             std::cout << std::endl << std::endl
             <<("******************************************")<< std::endl
             <<("*         FIM DO JANTAR ANIMADO          *")<< std::endl
             <<("******************************************")<< std::endl
             << std::endl;
-
-        } catch (int err) {
-            std::cout << err << ":Erro na Main() durante o .join() de alguma thread" << std::endl;
-        }
-
-
 
     return 0;
 }

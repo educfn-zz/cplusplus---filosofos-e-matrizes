@@ -45,7 +45,7 @@ public:
     //-Toda linha termina com um noh com a variavel ponteiro 'prox' apontando para nullptr.
     //-A linha final eh aquela que a variavel ponteiro 'emb'(primeiro noh da linha),
     //contiver o valor nullptr.
-    //-Eh necessario dois ponteiros para ler esta matriz: um para percorrer todos os noh¥s
+    //-Eh necessario dois ponteiros para ler esta matriz: um para percorrer todos os noh≈Ωs
     //da linha e outro para apontar para o primeiro noh. Somente com a confirmacao
     //do valor 'nullptr' nas variaveis ponteiro da struct 'ptrMatriz':
     //emb(primeiro noh) e prox(ultimo noh da linha) se pode confirmar que se chegou ao fim da matriz.
@@ -117,11 +117,23 @@ public:
             }//Fim da interacao coluna
             p = aux_p;
         }//Fim da criacao da matriz
+        else if(tam_x==0 || tam_y==0) std::cout << "Nao pode conter valor 0!" << std::endl;
+        else std::cout << "Nao pode ser valor negativo!" << std::endl;
         return p;
     }//Fim da funcao 'criarMatriz()'.
 
     void exibirMatriz(ptrMatriz m)
     {
+        if(m!=nullptr)
+        {
+            ptrMatriz p=m;
+            ptrMatriz aux=p;
+
+            while(p!=nullptr && aux!=nullptr)
+            {
+
+            }
+        }
 
     }
 };
@@ -129,7 +141,8 @@ public:
 int main()
 {
     Matriz m = Matriz();
-    std::cout << m.getPtrMatriz1() << std::endl;
     m.criarMatriz(0,0);
+    m.criarMatriz(-1,-7);
+    m.criarMatriz(1,1);
     return 0;
 }

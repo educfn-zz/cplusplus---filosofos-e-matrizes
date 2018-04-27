@@ -24,7 +24,25 @@
 	<chrono>
 	<string>
 
-1524612940 source:c:\users\ceitelabinfo\documents\github\cplusplus---filosofos-e-matrizes\jantarfilosofoscplusplus\jantarfilosofos\main.cpp
+1524442186 source:/home/educfn/cplusplus---filosofos-e-matrizes/jantarfilosofoscplusplus/JantarFilosofos/main.cpp
+	<iostream>
+	<cstdio>
+	<cstdbool>
+	<thread>
+	<mutex>
+	<chrono>
+	<string>
+
+1524452986 source:c:\users\ceitelabinfo\desktop\trab1\jantarfilosofoscplusplus\jantarfilosofos\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdbool>
+	<thread>
+	<mutex>
+	<chrono>
+	<string>
+
+1524709345 source:c:\users\eduardo\desktop\trab1\jantarfilosofoscplusplus\jantarfilosofos\main.cpp
 	<iostream>
 	<cstdio>
 	<cstdbool>

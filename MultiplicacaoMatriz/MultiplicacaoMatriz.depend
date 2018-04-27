@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1524704292 source:/home/educfn/cplusplus---filosofos-e-matrizes/MultiplicacaoMatriz/main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdbool>
+	<ctime>
+
